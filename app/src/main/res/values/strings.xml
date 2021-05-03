@@ -126,4 +126,28 @@
     <string name="durinsert">Confirm</string>
     <string name="Wrktinsert">Add To Workout</string>
 
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="enter_name">Please enter first name</string>
+    <string name="enter_lname">Please enter last name</string>
+    <string name="enter_Uname">Please enter username</string>
+    <string name="enter_pw">Please enter password</string>
+    <string name="enter_email">Please enter email address</string>
+    <string name="valid_mail">Please enter a valid mail address</string>
+    <string name="valid_passwaord">Password should have 6 digits</string>
+    <string name="enter_age">Please enter current age</string>
+    <string name="FnameError">Please enter a correnct first name</string>
+    <string name="LnameError">Please enter a correct last name</string>
+    <string name="ageValid">Please enter a correct age</string>
+    <string name="enterNowWeight">Please enter your current weight</string>
+    <string name="enterNowHeight">Please enter your current height</string>
+    <string name="enterTargetWeight">Please enter your weight target</string>
+    <string name="Email">Email</string>
+    <string name="emptyEmailLogin">Please enter your mail address</string>
+    <string name="emptyPassword">Please enter your password</string>
+    <string name="emptyUsernameLogin">Please enter username</string>
+
+
+
 </resources>
