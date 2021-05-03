@@ -66,13 +66,11 @@
         android:layout_width="286dp"
         android:layout_height="333dp"
         android:layout_marginStart="63dp"
-        android:layout_marginLeft="63dp"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="63dp"
-        android:layout_marginRight="63dp"
         android:background="#3949AB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:srcCompat="@drawable/water" />
+        app:srcCompat="@drawable/waterdrink" />
 </androidx.constraintlayout.widget.ConstraintLayout>
