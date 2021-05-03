@@ -75,6 +75,28 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="todo">TODO</string>
+
+
+    <string name="tvMeal1">White Rice(Cups)</string>
+    <string name="etQuantity1" />
+    <string name="etFoodMenu">FOOD MENU</string>
+
+    <string name="tvMeal2">Red Rice(Cups)</string>
+    <string name="tvMeal3">Hoppers</string>
+    <string name="tvMeal4">String Hoppers</string>
+    <string name="tvMeal5">Milk Rice(Cups)</string>
+    <string name="tvMeal6">Cereal (Bowls)</string>
+    <string name="tvMeal7">Cooked Veggies(gr)</string>
+    <string name="tvMeal8">Lentils(gr)</string>
+    <string name="btnMeal1">Add</string>
+    <string name="btnMeal2">Add</string>
+    <string name="btnMeal3">Add</string>
+    <string name="btnMeal4">Add</string>
+    <string name="btnMeal5">Add</string>
+    <string name="btnMeal6">Add</string>
+    <string name="btnMeal7">Add</string>
+    <string name="btnMeal8">Add</string>
+
     <string name="sholtxt">Shoulder Workouts</string>
     <string name="sholbtn1">Shoulder Press</string>
     <string name="sholbtn2">Laterals</string>
@@ -103,4 +125,5 @@
     <string name="calbpmin">Calories Burnt per Minute</string>
     <string name="durinsert">Confirm</string>
     <string name="Wrktinsert">Add To Workout</string>
+
 </resources>
