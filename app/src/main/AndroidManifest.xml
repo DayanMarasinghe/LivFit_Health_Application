@@ -9,7 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADproject_WorkoutHandling">
+
         <activity android:name=".UserInterfaceOne" />
+
+        <activity android:name=".ShoulderWorkout"></activity>
+        <activity android:name=".ChestWorkout" />
+        <activity android:name=".BackWorkout" />
+        <activity android:name=".ArmsWorkout" />
+        <activity android:name=".LegsWorkout" />
+
         <activity android:name=".faq" />
         <activity android:name=".aboutUs" />
         <activity android:name=".updateAccount" />
@@ -29,8 +37,14 @@
         <activity android:name=".StepCounter" />
         <activity android:name=".PushupWorkout" />
         <activity android:name=".CardioWorkout" />
+
         <activity android:name=".SearchWorkout" />
         <activity android:name=".EditFood" />
+
+        <activity android:name=".SearchWorkout">
+
+        </activity>
+      
     </application>
 
 </manifest>
