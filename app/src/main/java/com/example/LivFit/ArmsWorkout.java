@@ -22,34 +22,35 @@ public class ArmsWorkout extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDynamicWorkout();
+                openDynamicWorkout("w9");
             }
         });
         btn3=(Button)findViewById(R.id.pcurl);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDynamicWorkout();
+                openDynamicWorkout("w8");
             }
         });
         btn2=(Button)findViewById(R.id.bicurl);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDynamicWorkout();
+                openDynamicWorkout("w7");
             }
         });
         btn1=(Button)findViewById(R.id.barcurl);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDynamicWorkout();
+                openDynamicWorkout("w10");
             }
         });
     }
 
-    public void openDynamicWorkout(){
+    public void openDynamicWorkout(String wtypy){
         Intent intent = new Intent(this, PushupWorkout.class);
+        intent.putExtra("workout",wtypy);
         startActivity(intent);
     }
 }
