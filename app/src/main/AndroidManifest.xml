@@ -41,9 +41,13 @@
         <activity android:name=".Register" />
         <activity android:name=".login" />
 
+        <activity android:name=".CalorieCounter">
+
+
         <activity android:name=".UserInterfaceOne">
 
         <activity android:name=".SearchFood">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -61,10 +65,14 @@
         <activity android:name=".SearchWorkout" />
         <activity android:name=".EditFood" />
 
+        <activity android:name=".SearchFood" />
+
+
         <activity android:name=".SearchWorkout">
 
         </activity>
       
+
 
     </application>
 
