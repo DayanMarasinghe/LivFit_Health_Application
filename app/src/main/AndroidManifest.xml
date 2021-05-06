@@ -22,6 +22,11 @@
         <activity android:name=".WaterTracker"/>
         <activity android:name=".UserInterfaceOne" />
 
+
+
+
+
+
         <activity android:name=".ChestWorkout" />
         <activity android:name=".BackWorkout" />
         <activity android:name=".ArmsWorkout" />
@@ -40,24 +45,52 @@
         <activity android:name=".login" />
 
 
+
+
+
+
         <activity android:name=".SearchFood">
+
+        <activity android:name=".CalorieCounter">
+
+
+        <activity android:name=".UserInterfaceOne">
+
+
+        <activity android:name=".SearchFood">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
 
         </activity>
         <activity android:name=".StepCounter" />
         <activity android:name=".PushupWorkout" />
         <activity android:name=".CardioWorkout" />
 
-        <activity android:name=".SearchWorkout"></activity>
+        <activity android:name=".SearchWorkout">
+
+        </activity>
+
+
 
         <activity android:name=".EditFood">
 
-        </activity>
+
+        <activity android:name=".EditFood" />
+
+
+
+        <activity android:name=".SearchFood" />
+
+
+        <activity android:name=".SearchWorkout">
+
+
+
       
+
 
     </application>
 

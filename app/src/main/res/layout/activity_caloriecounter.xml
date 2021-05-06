@@ -8,7 +8,7 @@
     tools:context=".CalorieCounter">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnBRK1"
         android:layout_width="64dp"
         android:layout_height="35dp"
         android:layout_marginTop="101dp"
@@ -19,63 +19,12 @@
         android:text="Add"
         android:textSize="14sp"
         app:backgroundTint="#E1F4511E"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btnLUNCH2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button12"
-        android:layout_width="79dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginRight="65dp"
-        android:background="#FFFFFF"
-        android:text="Delete"
-        app:backgroundTint="#768385"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine8" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="79dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="28dp"
-        android:background="#FFFFFF"
-        android:text="Edit"
-        app:backgroundTint="#768385"
-        app:layout_constraintEnd_toStartOf="@+id/button12"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine8" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="111dp"
-        android:layout_marginLeft="111dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginRight="90dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="Brown Rice      1 Bowl
-           RDI 5% - 170Kcal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
-
-    <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnSNK4"
         android:layout_width="64dp"
         android:layout_height="35dp"
         android:layout_marginTop="36dp"
@@ -86,7 +35,11 @@
         android:textSize="14sp"
         app:backgroundTint="#E1F4511E"
         app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/btnDIN3" />
+
         app:layout_constraintTop_toBottomOf="@+id/btnLoginIn" />
+
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
@@ -106,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnLUNCH2"
         android:layout_width="64dp"
         android:layout_height="35dp"
         android:layout_marginEnd="24dp"
@@ -116,7 +69,11 @@
         android:text="Add"
         android:textSize="14sp"
         app:backgroundTint="#E1F4511E"
+
+        app:layout_constraintBottom_toTopOf="@+id/btnDIN3"
+
         app:layout_constraintBottom_toTopOf="@+id/btnLoginIn"
+
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
@@ -141,8 +98,7 @@
         android:layout_width="136dp"
         android:layout_height="35dp"
         android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginBottom="33dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:inputType="textPersonName"
@@ -150,8 +106,8 @@
         android:textColor="#1E88E5"
         android:textSize="23sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
+        app:layout_constraintStart_toEndOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -191,7 +147,11 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
+
+        android:id="@+id/btnDIN3"
+
         android:id="@+id/btnLoginIn"
+
         android:layout_width="64dp"
         android:layout_height="35dp"
         android:layout_marginEnd="24dp"
@@ -201,27 +161,8 @@
         android:text="Add"
         android:textSize="14sp"
         app:backgroundTint="#E1F4511E"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/btnSNK4"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine2"
-        android:layout_width="214dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="111dp"
-        android:layout_marginLeft="111dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="90dp"
-        android:layout_marginRight="90dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="Basmati Rice  1 Bowl
-        RDI 2% - 350Kcal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <ImageView
         android:id="@+id/imageView2"
