@@ -43,7 +43,19 @@
 
 
 
+
         <activity android:name=".SearchFood">
+
+        <activity android:name=".CalorieCounter">
+
+
+        <activity android:name=".UserInterfaceOne">
+
+        <activity android:name=".SearchFood">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
 
 
         </activity>
@@ -60,7 +72,15 @@
         <activity android:name=".EditFood" />
 
 
+
+        <activity android:name=".SearchFood" />
+
+
+        <activity android:name=".SearchWorkout">
+
+
       
+
 
     </application>
 
