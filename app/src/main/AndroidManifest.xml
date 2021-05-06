@@ -19,10 +19,8 @@
         </activity>
         <activity android:name=".ShoulderWorkout" />
 
-
+        <activity android:name=".WaterTracker"/>
         <activity android:name=".UserInterfaceOne" />
-
-        <activity android:name=".ShoulderWorkout"></activity>
 
         <activity android:name=".ChestWorkout" />
         <activity android:name=".BackWorkout" />
@@ -41,7 +39,6 @@
         <activity android:name=".Register" />
         <activity android:name=".login" />
 
-        <activity android:name=".UserInterfaceOne">
 
         <activity android:name=".SearchFood">
             <intent-filter>
@@ -57,11 +54,7 @@
 
         <activity android:name=".SearchWorkout"></activity>
 
-
-        <activity android:name=".SearchWorkout" />
-        <activity android:name=".EditFood" />
-
-        <activity android:name=".SearchWorkout">
+        <activity android:name=".EditFood">
 
         </activity>
       
