@@ -25,6 +25,7 @@ public class PushupWorkout extends AppCompatActivity {
     DatabaseReference reff;
     private EditText duration;
     private int calburn;
+    int count;
 
     String wtype;
     @Override
@@ -63,16 +64,21 @@ public class PushupWorkout extends AppCompatActivity {
             public void onClick(View v) {
                calburn = calculateCalBurnt(duration,b);
                String getcalburn = String.valueOf(calburn);
-
-              getcalburn = duration.getText().toString();
                burntnum.setText(getcalburn);
-
-
-
 
             }
         });
 
+    }
+
+    public void increment(View v){
+        count++;
+        duration.setText(""+count);
+    }
+    public void decrement(View v){
+        if(count<=0) count=0;
+        else count--;
+        duration.setText(""+count);
     }
 
     public int calculateCalBurnt(EditText duration, TextView b){
@@ -83,3 +89,6 @@ public class PushupWorkout extends AppCompatActivity {
         return cvcalburn*cvduration;
     }
 }
+
+
+
