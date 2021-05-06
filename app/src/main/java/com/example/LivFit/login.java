@@ -35,7 +35,6 @@ public class login extends AppCompatActivity {
     private TextView forgetPW;
     private Button logBtn;
     private AwesomeValidation awesomeValidation;
-    private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
 
     @Override
@@ -56,7 +55,6 @@ public class login extends AppCompatActivity {
         }
 
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
-        firebaseAuth = FirebaseAuth.getInstance();
 
         //validation patterns
         awesomeValidation.addValidation(this,R.id.etEnterUsername, RegexTemplate.NOT_EMPTY,R.string.emptyUsernameLogin);
@@ -67,14 +65,46 @@ public class login extends AppCompatActivity {
             public void onClick(View v) {
                 //checking form validation
                 if(awesomeValidation.validate()){
-                    String valEmail = username.getText().toString().trim();
-                    String valPassword = password.getText().toString().trim();
-                    //authenticate user
-                    firebaseAuth.signInWithEmailAndPassword(valEmail,valPassword);
+                    //getting database instance
+                    databaseReference = FirebaseDatabase.getInstance().getReference().child("User").child("user1");
+                    databaseReference.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            String DBpassword = snapshot.child("pword").getValue().toString().trim();
 
-                    //to fertch data from firebase
-                    isUser();
-                    
+                            String checkingPW = password.getText().toString().trim();
+
+                            //checking if the password matches
+                            if(DBpassword.compareTo(checkingPW) == 0){
+                                //if passwords matches getting daily data
+                                String calGoal = snapshot.child("calGoal").getValue().toString();
+                                String calConsumption = snapshot.child("calConsumption").getValue().toString();
+                                String calBurned = snapshot.child("calBurned").getValue().toString();
+                                String watercount = snapshot.child("waterCount").getValue().toString();
+
+                                Toast.makeText(getApplicationContext(),"Logged In" , Toast.LENGTH_SHORT).show();
+
+                                //send data to the dashboard through intent
+                                Intent logDashIntent = new Intent(login.this,Dashboard.class);
+                                logDashIntent.putExtra("KeyDashCalGoal" , calGoal);
+                                logDashIntent.putExtra("KeyDashCalConsumption" , calConsumption);
+                                logDashIntent.putExtra("KeyDashCalBurned" , calBurned);
+                                logDashIntent.putExtra("KeyDashWaterCount" , watercount);
+
+                                startActivity(logDashIntent);
+
+                            }
+                            else{
+                                Toast.makeText(getApplicationContext(),"Please enter correct password",Toast.LENGTH_SHORT).show();
+                            }
+
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
                 }
                 else{
                     Toast.makeText(getApplicationContext(),"Please enter login credential correctly",Toast.LENGTH_SHORT).show();
@@ -99,68 +129,5 @@ public class login extends AppCompatActivity {
 
             }
         });
-    }
-
-    private void isUser() {
-
-        String userEnterdUsername = username.getText().toString().trim();
-        String userEnterdPassword = password.getText().toString().trim();
-
-        databaseReference = FirebaseDatabase.getInstance().getReference("User");
-
-        //check if the user exists
-        Query checkUser = databaseReference.orderByChild("uname").equalTo(userEnterdUsername);
-        checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                //if the username exists
-                if(snapshot.exists()){
-
-                    username.setError(null);
-                    username.setEnabled(false);
-
-                    //get the password from the db for the particular username
-                    String DBpassword = snapshot.child(userEnterdUsername).child("pword").getValue(String.class);
-
-                    //checking if the user entered password is matching to the db password
-                    if(Objects.equals(DBpassword, userEnterdPassword)){
-
-                        username.setError(null);
-                        username.setEnabled(false);
-
-                        //if so taking needed fields from the firebase
-                        String DBCalGoal = snapshot.child(userEnterdUsername).child("calGoal").getValue(String.class);
-                        String DBCalConsumption = snapshot.child(userEnterdUsername).child("calConsumption").getValue(String.class);
-                        String DBCalBurned = snapshot.child(userEnterdUsername).child("calBurned").getValue(String.class);
-                        String DBWaterCount = snapshot.child(userEnterdUsername).child("waterCount").getValue(String.class);
-
-                        Toast.makeText(getApplicationContext(),"HIII" , Toast.LENGTH_SHORT).show();
-
-                        //calling the dashboard by passing those from an Intent
-                        Intent dashIntent = new Intent(getApplicationContext(),Dashboard.class);
-                        dashIntent.putExtra("KeyDashCalGoal",DBCalGoal);
-                        dashIntent.putExtra("KeyDashCalConsum",DBCalConsumption);
-                        dashIntent.putExtra("KeyDashCalBurn",DBCalBurned);
-                        dashIntent.putExtra("KeyDashWaterCount",DBWaterCount);
-
-                        startActivity(dashIntent);
-                    }
-                    else{
-                        password.setError("Wrong password");
-                        password.requestFocus();
-                    }
-                }
-                else{
-                    username.setError("Invalid username");
-                    username.requestFocus();
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
     }
 }
