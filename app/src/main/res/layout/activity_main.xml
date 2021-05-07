@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -25,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:gravity="center"
-                android:text="Calories Counter"
+                android:text="@string/mainac"
                 android:textColor="@color/success"
                 android:textSize="24sp"
                 android:textStyle="bold|italic" />
@@ -38,7 +36,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:text="Breakfast"
+                android:text="@string/breakfast"
                 android:textColor="#F14B23"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -57,7 +55,7 @@
 
 
                     <TextView
-                        android:id="@+id/topidcc"
+                        android:id="@+id/b1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="2dp"
@@ -69,7 +67,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/dedtaill"
+                        android:id="@+id/b2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="2dp"
@@ -88,14 +86,14 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/fcomplete"
+                        android:id="@+id/bdelete"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         app:srcCompat="@drawable/delete" />
 
                     <ImageButton
-                        android:id="@+id/efdit"
+                        android:id="@+id/bedit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -120,7 +118,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:text="Lunch"
+                android:text="@string/lunch"
                 android:textColor="#F14B23"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -139,7 +137,7 @@
 
 
                     <TextView
-                        android:id="@+id/topgicc"
+                        android:id="@+id/l1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="2dp"
@@ -151,7 +149,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/dethaill"
+                        android:id="@+id/l2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="2dp"
@@ -170,14 +168,14 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/compledte"
+                        android:id="@+id/ldelete"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         app:srcCompat="@drawable/delete" />
 
                     <ImageButton
-                        android:id="@+id/edidt"
+                        android:id="@+id/ledit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -202,7 +200,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:text="Dinner"
+                android:text="@string/dinner"
                 android:textColor="#F14B23"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -221,7 +219,7 @@
 
 
                     <TextView
-                        android:id="@+id/topficc"
+                        android:id="@+id/d1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="2dp"
@@ -233,7 +231,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/destaill"
+                        android:id="@+id/d2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="2dp"
@@ -252,14 +250,14 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/compleste"
+                        android:id="@+id/ddelete"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         app:srcCompat="@drawable/delete" />
 
                     <ImageButton
-                        android:id="@+id/ediat"
+                        android:id="@+id/dedit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -284,7 +282,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:text="Snacks"
+                android:text="@string/snack"
                 android:textColor="#F14B23"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -303,7 +301,7 @@
 
 
                     <TextView
-                        android:id="@+id/topicc"
+                        android:id="@+id/s1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="2dp"
@@ -315,7 +313,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/detaill"
+                        android:id="@+id/s2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="2dp"
@@ -334,14 +332,14 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/complete"
+                        android:id="@+id/sdelete"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         app:srcCompat="@drawable/delete" />
 
                     <ImageButton
-                        android:id="@+id/edit"
+                        android:id="@+id/sedit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -370,12 +368,12 @@
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/nutrition"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:background="@drawable/buttonbg"
-                        android:text="Neutrition"
+                        android:text="@string/neutbutton"
                         app:backgroundTint="@color/success" />
                 </LinearLayout>
 
@@ -386,12 +384,12 @@
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/button2"
+                        android:id="@+id/water"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:background="@drawable/buttonbg"
-                        android:text="Water Intake"
+                        android:text="@string/waterbutton"
                         app:backgroundTint="@color/success" />
                 </LinearLayout>
             </LinearLayout>

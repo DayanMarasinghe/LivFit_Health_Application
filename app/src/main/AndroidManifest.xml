@@ -23,19 +23,10 @@
         <activity android:name=".Register_fitness_data" />
         <activity android:name=".Register" />
         <activity android:name=".login" />
-        <activity android:name=".CalorieCounter">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".StepCounter" />
         <activity android:name=".PushupWorkout" />
         <activity android:name=".CardioWorkout" />
         <activity android:name=".SearchWorkout" />
-        <activity android:name=".EditFood" />
-        <activity android:name=".SearchFood" />
     </application>
 
 </manifest>
