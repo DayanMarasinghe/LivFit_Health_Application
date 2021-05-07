@@ -7,61 +7,73 @@
     tools:context=".login">
 
     <EditText
-        android:id="@+id/ptUserName"
-        android:layout_width="281dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="144dp"
+        android:id="@+id/etPass"
+        android:layout_width="313dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="54dp"
+        android:autofillHints=""
         android:cursorVisible="true"
         android:ems="10"
-        android:textSize="24sp"
-        android:hint="@string/username"
-        android:inputType="textPersonName"
-        android:textColorHint="@color/orange"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="281dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="60dp"
-        android:cursorVisible="true"
-        android:ems="10"
-        android:textSize="24sp"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textColorHint="@color/orange"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ptUserName"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/etEnterUsername" />
 
     <Button
+
         android:id="@+id/btnDIN3"
         android:layout_width="128dp"
         android:layout_height="54dp"
         android:layout_marginTop="72dp"
+
+        android:id="@+id/btnLoginIn"
+        android:layout_width="173dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="36dp"
+
         android:text="@string/login"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etPass" />
 
     <TextView
         android:id="@+id/tvForgotPW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="123dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="186dp"
         android:linksClickable="true"
         android:text="@string/forgetPW"
         android:textColor="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginIn" />
+
+    <EditText
+        android:id="@+id/etEnterUsername"
+        android:layout_width="313dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="117dp"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName|textEmailAddress"
+        android:textColorHint="@color/orange"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
         app:layout_constraintTop_toBottomOf="@+id/btnDIN3"
         app:layout_constraintVertical_bias="0.036" />
+
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

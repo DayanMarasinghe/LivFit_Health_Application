@@ -76,6 +76,7 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="todo">TODO</string>
 
+
     <string name="tvMeal1">White Rice(Cups)</string>
     <string name="etQuantity1" />
     <string name="etFoodMenu">FOOD MENU</string>
@@ -95,5 +96,61 @@
     <string name="btnMeal6">Add</string>
     <string name="btnMeal7">Add</string>
     <string name="btnMeal8">Add</string>
+
+
+
+    <string name="sholtxt">Shoulder Workouts</string>
+    <string name="sholbtn1">Shoulder Press</string>
+    <string name="sholbtn2">Laterals</string>
+    <string name="sholbtn3">Front Raise</string>
+    <string name="sholbtn4">High Pull</string>
+    <string name="legtxt">Leg Workouts</string>
+    <string name="lgbtn1">Squats</string>
+    <string name="lgbtn2">Leg Press</string>
+    <string name="lgbtn3">Lunges</string>
+    <string name="lgbtn4">Deadlift</string>
+    <string name="chsttxt">Chest Workouts</string>
+    <string name="chbtn1">Bench Press</string>
+    <string name="chbtn2">Chest Press</string>
+    <string name="chbtn3">Dumbbell Flies</string>
+    <string name="chbtn4">Cable Crossover</string>
+    <string name="bktxt">Back Workouts</string>
+    <string name="bkbtn1">Back Press</string>
+    <string name="bkbtn2">Rowing</string>
+    <string name="bkbtn3">Lat Pulldown</string>
+    <string name="bkbtn4">T Bar</string>
+    <string name="armtxt">Arm Workouts</string>
+    <string name="armbtn1">Bicep Curl</string>
+    <string name="armbtn2">Preacher Curl</string>
+    <string name="armbtn3">Tricep Pushdown</string>
+    <string name="armbtn4">Barbell Curl</string>
+    <string name="calbpmin">Calories Burnt per Minute</string>
+    <string name="durinsert">Confirm</string>
+    <string name="Wrktinsert">Add To Workout</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="gender">Gender</string>
+    <string name="enter_name">Please enter first name</string>
+    <string name="enter_lname">Please enter last name</string>
+    <string name="enter_Uname">Please enter username</string>
+    <string name="enter_pw">Please enter password</string>
+    <string name="enter_email">Please enter email address</string>
+    <string name="valid_mail">Please enter a valid mail address</string>
+    <string name="valid_passwaord">Password should have 6 digits</string>
+    <string name="enter_age">Please enter current age</string>
+    <string name="FnameError">Please enter a correnct first name</string>
+    <string name="LnameError">Please enter a correct last name</string>
+    <string name="ageValid">Please enter a correct age</string>
+    <string name="enterNowWeight">Please enter your current weight</string>
+    <string name="enterNowHeight">Please enter your current height</string>
+    <string name="enterTargetWeight">Please enter your weight target</string>
+    <string name="Email">Email</string>
+    <string name="emptyEmailLogin">Please enter your mail address</string>
+    <string name="emptyPassword">Please enter your password</string>
+    <string name="emptyUsernameLogin">Please enter username</string>
+    <string name="darkTheme">Dark Theme</string>
+
+
 
 </resources>

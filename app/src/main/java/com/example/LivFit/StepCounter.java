@@ -9,6 +9,6 @@ public class StepCounter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.step_counter);
+        setContentView(R.layout.activity_step_counter);
     }
 }

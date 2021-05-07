@@ -9,33 +9,96 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADproject_WorkoutHandling">
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/actions" />
 
-        <activity android:name=".UserInterfaceOne" />
-        <activity android:name=".faq" />
-        <activity android:name=".aboutUs" />
-        <activity android:name=".updateAccount" />
-        <activity android:name=".settings" />
-        <activity android:name=".Dashboard" />
-        <activity android:name=".DisplayBMI" />
-        <activity android:name=".Register_fitness_data" />
-        <activity android:name=".Register" />
-        <activity android:name=".login" />
-        <activity android:name=".CalorieCounter">
+
+
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ShoulderWorkout" />
+
+        <activity android:name=".WaterTracker"/>
+
+        <activity android:name=".UserInterfaceOne" />
+
+
+
+
+
+
+        <activity android:name=".ChestWorkout" />
+        <activity android:name=".BackWorkout" />
+        <activity android:name=".ArmsWorkout" />
+        <activity android:name=".LegsWorkout" />
+
+        <activity android:name=".faq" />
+        <activity android:name=".aboutUs" />
+        <activity android:name=".updateAccount" />
+        <activity android:name=".settings" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".DisplayBMI" />
+        <activity android:name=".Register_fitness_data">
+        </activity>
+
+        <activity android:name=".Register" />
+        <activity android:name=".login" />
+
+
+
+
+
+
+        <activity android:name=".SearchFood">
+
+        <activity android:name=".CalorieCounter">
+
+
+        <activity android:name=".UserInterfaceOne">
+
+
+        <activity android:name=".SearchFood">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+
+        </activity>
         <activity android:name=".StepCounter" />
         <activity android:name=".PushupWorkout" />
         <activity android:name=".CardioWorkout" />
-        <activity android:name=".SearchWorkout" />
+
+        <activity android:name=".SearchWorkout">
+
+        </activity>
+
+
+
+        <activity android:name=".EditFood">
+
+
         <activity android:name=".EditFood" />
+
+
+
         <activity android:name=".SearchFood" />
+
+
+        <activity android:name=".SearchWorkout">
+
+
+
+      
+
+
     </application>
 
 </manifest>
