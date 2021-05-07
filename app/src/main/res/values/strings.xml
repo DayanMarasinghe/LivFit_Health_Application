@@ -97,6 +97,8 @@
     <string name="btnMeal7">Add</string>
     <string name="btnMeal8">Add</string>
 
+
+
     <string name="sholtxt">Shoulder Workouts</string>
     <string name="sholbtn1">Shoulder Press</string>
     <string name="sholbtn2">Laterals</string>
@@ -148,6 +150,7 @@
     <string name="emptyPassword">Please enter your password</string>
     <string name="emptyUsernameLogin">Please enter username</string>
     <string name="darkTheme">Dark Theme</string>
+
 
 
 </resources>
