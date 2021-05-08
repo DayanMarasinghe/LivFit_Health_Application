@@ -25,11 +25,6 @@
 
     <Button
 
-        android:id="@+id/btnDIN3"
-        android:layout_width="128dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="72dp"
-
         android:id="@+id/btnLoginIn"
         android:layout_width="173dp"
         android:layout_height="76dp"
@@ -61,7 +56,7 @@
         android:id="@+id/etEnterUsername"
         android:layout_width="313dp"
         android:layout_height="88dp"
-        android:layout_marginTop="117dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="@string/username"
         android:inputType="textPersonName|textEmailAddress"
@@ -69,10 +64,9 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/btnDIN3"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
         app:layout_constraintTop_toTopOf="parent" />
 

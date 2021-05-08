@@ -19,7 +19,6 @@ public class CalorieCounter extends AppCompatActivity {
         //bind the buttons
         btn1 = findViewById(R.id.btnBRK1);
         btn2 = findViewById(R.id.btnLUNCH2);
-        btn3 = findViewById(R.id.btnDIN3);
         btn4 = findViewById(R.id.btnSNK4);
 
         btn1.setOnClickListener(new View.OnClickListener() {

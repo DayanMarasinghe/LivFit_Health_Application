@@ -36,9 +36,7 @@
         app:backgroundTint="#E1F4511E"
         app:layout_constraintEnd_toEndOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/btnDIN3" />
-
-        app:layout_constraintTop_toBottomOf="@+id/btnLoginIn" />
+        tools:ignore="MissingConstraints" />
 
 
     <EditText
@@ -69,12 +67,8 @@
         android:text="Add"
         android:textSize="14sp"
         app:backgroundTint="#E1F4511E"
-
-        app:layout_constraintBottom_toTopOf="@+id/btnDIN3"
-
-        app:layout_constraintBottom_toTopOf="@+id/btnLoginIn"
-
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
@@ -147,11 +141,6 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
-
-        android:id="@+id/btnDIN3"
-
-        android:id="@+id/btnLoginIn"
-
         android:layout_width="64dp"
         android:layout_height="35dp"
         android:layout_marginEnd="24dp"
