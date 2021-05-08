@@ -148,6 +148,7 @@
     <string name="emptyPassword">Please enter your password</string>
     <string name="emptyUsernameLogin">Please enter username</string>
     <string name="darkTheme">Dark Theme</string>
+    <string name="invalid_duration">Enter a valid duration</string>
 
 
 </resources>
