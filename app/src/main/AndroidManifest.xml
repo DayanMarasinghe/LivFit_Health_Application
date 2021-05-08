@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.LivFit">
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADproject_WorkoutHandling">
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
+
 
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -19,6 +26,7 @@
         </activity>
         <activity android:name=".ShoulderWorkout" />
         <activity android:name=".WaterTracker"/>
+
         <activity android:name=".UserInterfaceOne" />
         <activity android:name=".ChestWorkout" />
         <activity android:name=".BackWorkout" />
@@ -33,6 +41,7 @@
         <activity android:name=".Register_fitness_data"/>
         <activity android:name=".Register" />
         <activity android:name=".login" />
+
         <activity android:name=".SearchFood"/>
         <activity android:name=".CalorieCounter"/>
         <activity android:name=".StepCounter" />
@@ -40,6 +49,42 @@
         <activity android:name=".CardioWorkout" />
         <activity android:name=".SearchWorkout"/>
         <activity android:name=".EditFood"/>
+
+
+
+
+
+
+
+        <activity android:name=".SearchFood"/>
+
+        <activity android:name=".CalorieCounter">
+
+
+
+
+
+
+
+
+
+        </activity>
+        <activity android:name=".StepCounter" />
+        <activity android:name=".PushupWorkout" />
+        <activity android:name=".CardioWorkout" />
+
+        <activity android:name=".SearchWorkout">
+
+        </activity>
+
+
+
+        <activity android:name=".EditFood"/>
+
+
+
+
+
 
 
       

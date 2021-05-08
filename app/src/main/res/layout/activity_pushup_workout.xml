@@ -13,8 +13,7 @@
         android:layout_marginTop="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pushup" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textViewpshups"
@@ -134,6 +133,7 @@
         android:layout_marginTop="89dp"
         android:layout_marginEnd="120dp"
         android:layout_marginBottom="31dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextdurationw"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewpshups"
