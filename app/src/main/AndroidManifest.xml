@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.LivFit">
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -56,18 +57,15 @@
 
 
 
-        <activity android:name=".SearchFood">
+        <activity android:name=".SearchFood"/>
 
         <activity android:name=".CalorieCounter">
 
 
-        <activity android:name=".UserInterfaceOne">
 
 
-        <activity android:name=".SearchFood">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
 
 
 
@@ -82,17 +80,10 @@
 
 
 
-        <activity android:name=".EditFood">
-
-
-        <activity android:name=".EditFood" />
+        <activity android:name=".EditFood"/>
 
 
 
-        <activity android:name=".SearchFood" />
-
-
-        <activity android:name=".SearchWorkout">
 
 
 

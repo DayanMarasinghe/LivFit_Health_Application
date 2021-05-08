@@ -25,10 +25,7 @@
 
     <Button
 
-        android:id="@+id/btnDIN3"
-        android:layout_width="128dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="72dp"
+
 
         android:id="@+id/btnLoginIn"
         android:layout_width="173dp"
