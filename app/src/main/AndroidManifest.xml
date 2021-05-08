@@ -25,32 +25,31 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShoulderWorkout" />
-
         <activity android:name=".WaterTracker"/>
 
         <activity android:name=".UserInterfaceOne" />
-
-
-
-
-
-
         <activity android:name=".ChestWorkout" />
         <activity android:name=".BackWorkout" />
         <activity android:name=".ArmsWorkout" />
         <activity android:name=".LegsWorkout" />
-
         <activity android:name=".faq" />
         <activity android:name=".aboutUs" />
         <activity android:name=".updateAccount" />
         <activity android:name=".settings" />
         <activity android:name=".Dashboard" />
         <activity android:name=".DisplayBMI" />
-        <activity android:name=".Register_fitness_data">
-        </activity>
-
+        <activity android:name=".Register_fitness_data"/>
         <activity android:name=".Register" />
         <activity android:name=".login" />
+
+        <activity android:name=".SearchFood"/>
+        <activity android:name=".CalorieCounter"/>
+        <activity android:name=".StepCounter" />
+        <activity android:name=".PushupWorkout" />
+        <activity android:name=".CardioWorkout" />
+        <activity android:name=".SearchWorkout"/>
+        <activity android:name=".EditFood"/>
+
 
 
 
@@ -81,6 +80,7 @@
 
 
         <activity android:name=".EditFood"/>
+
 
 
 
