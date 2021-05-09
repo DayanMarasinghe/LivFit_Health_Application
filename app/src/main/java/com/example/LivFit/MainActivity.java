@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //move from one act to another
-                Intent intent = new Intent(com.tech.fitnessapp.MainActivity.this, NeutritionInfo.class);
+                Intent intent = new Intent(MainActivity.this, NeutritionInfo.class);
                 startActivity(intent);
             }
         });
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(com.tech.fitnessapp.MainActivity.this, WaterIntake.class);
+                Intent intent = new Intent(MainActivity.this, WaterIntake.class);
                 startActivity(intent);
             }
         });
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 String name = snapshot.child("mname").getValue().toString();
                 String calories = snapshot.child("calories").getValue().toString();
 
-                textView5.setText("Meal name:- "+name);
+                textView5.setText(" "+name);
                 textView6.setText("Calories:- "+calories);
 
             }
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 String name = snapshot.child("mname").getValue().toString();
                 String calories = snapshot.child("calories").getValue().toString();
 
-                textView7.setText("Meal name:- "+name);
+                textView7.setText(" "+name);
                 textView8.setText("Calories:- "+calories);
 
             }
@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder1 = new AlertDialog.Builder(com.tech.fitnessapp.MainActivity.this);
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
                 builder1.setMessage("Do you want to delete your details?");
                 builder1.setCancelable(true);
 
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder1 = new AlertDialog.Builder(com.tech.fitnessapp.MainActivity.this);
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
                 builder1.setMessage("Do you want to delete your details?");
                 builder1.setCancelable(true);
 
@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder1 = new AlertDialog.Builder(com.tech.fitnessapp.MainActivity.this);
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
                 builder1.setMessage("Do you want to delete your details?");
                 builder1.setCancelable(true);
 
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder1 = new AlertDialog.Builder(com.tech.fitnessapp.MainActivity.this);
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
                 builder1.setMessage("Do you want to delete your details?");
                 builder1.setCancelable(true);
 
@@ -261,7 +261,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder1 = new AlertDialog.Builder(com.tech.fitnessapp.MainActivity.this);
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
                 builder1.setMessage("Do you want to update your details?");
                 builder1.setCancelable(true);
 
@@ -269,7 +269,7 @@ public class MainActivity extends AppCompatActivity {
                         "Yes",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                Intent intent = new Intent(com.tech.fitnessapp.MainActivity.this, com.tech.fitnessapp.BreakfastUpdate.class);
+                                Intent intent = new Intent(MainActivity.this, BreakfastUpdate.class);
                                 startActivity(intent);
                             }
                         });
@@ -290,7 +290,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder1 = new AlertDialog.Builder(com.tech.fitnessapp.MainActivity.this);
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
                 builder1.setMessage("Do you want to update your details?");
                 builder1.setCancelable(true);
 
@@ -298,7 +298,7 @@ public class MainActivity extends AppCompatActivity {
                         "Yes",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                Intent intent = new Intent(com.tech.fitnessapp.MainActivity.this, LunchUpdate.class);
+                                Intent intent = new Intent(MainActivity.this, LunchUpdate.class);
                                 startActivity(intent);
                             }
                         });
@@ -319,7 +319,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder1 = new AlertDialog.Builder(com.tech.fitnessapp.MainActivity.this);
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
                 builder1.setMessage("Do you want to update your details?");
                 builder1.setCancelable(true);
 
@@ -328,7 +328,7 @@ public class MainActivity extends AppCompatActivity {
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
 
-                                Intent intent = new Intent(com.tech.fitnessapp.MainActivity.this, DinnerUpdate.class);
+                                Intent intent = new Intent(MainActivity.this, DinnerUpdate.class);
                                 startActivity(intent);
                             }
                         });
@@ -351,7 +351,7 @@ public class MainActivity extends AppCompatActivity {
         imageButton8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder1 = new AlertDialog.Builder(com.tech.fitnessapp.MainActivity.this);
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(MainActivity.this);
                 builder1.setMessage("Do you want to update your details?");
                 builder1.setCancelable(true);
 
@@ -360,7 +360,7 @@ public class MainActivity extends AppCompatActivity {
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
 
-                                Intent intent = new Intent(com.tech.fitnessapp.MainActivity.this, SnackUpdate.class);
+                                Intent intent = new Intent(MainActivity.this, SnackUpdate.class);
                                 startActivity(intent);
                             }
                         });

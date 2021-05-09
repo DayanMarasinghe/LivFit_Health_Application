@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MADproject_WorkoutHandling">
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/actions" />
+
 
         <activity android:name=".UserInterfaceOne" />
         <activity android:name=".faq" />
@@ -27,6 +25,21 @@
         <activity android:name=".PushupWorkout" />
         <activity android:name=".CardioWorkout" />
         <activity android:name=".SearchWorkout" />
+
+        <activity android:name=".SnackUpdate"></activity>
+        <activity android:name=".DinnerUpdate" />
+        <activity android:name=".LunchUpdate" />
+        <activity android:name=".BreakfastUpdate" />
+        <activity android:name=".WaterIntake" />
+        <activity android:name=".NeutritionInfo" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
+
 
 </manifest>
