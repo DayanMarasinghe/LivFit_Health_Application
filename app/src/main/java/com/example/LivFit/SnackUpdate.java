@@ -46,7 +46,7 @@ public class SnackUpdate extends AppCompatActivity {
                 name = snapshot.child("mname").getValue().toString();
                 calories = snapshot.child("calories").getValue().toString();
 
-                textView1.setText("Meal name:- "+name);
+                textView1.setText(" "+name);
                 textView2.setText(calories);
 
                 textCal = Integer.parseInt(textView2.getText().toString());
