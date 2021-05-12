@@ -100,7 +100,7 @@ public class Dashboard extends AppCompatActivity {
 
     }
 
-    private String calculateRemainingCalories(String getCalGoal, String getCalConsumption, String getCalBurned) {
+    public String calculateRemainingCalories(String getCalGoal, String getCalConsumption, String getCalBurned) {
         Double convertedGoal = Double.parseDouble(getCalGoal);
         Double convertedConsumption = Double.parseDouble(getCalConsumption);
         Double convertedBurned = Double.parseDouble(getCalBurned);
@@ -114,4 +114,6 @@ public class Dashboard extends AppCompatActivity {
         return sendRemain;
 
     }
+
+
 }

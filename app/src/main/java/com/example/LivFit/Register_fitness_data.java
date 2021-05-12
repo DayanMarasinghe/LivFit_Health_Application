@@ -152,7 +152,7 @@ public class Register_fitness_data extends AppCompatActivity {
     }
 
     //get gender
-    private void findGender(int checkedID) {
+    public void findGender(int checkedID) {
         //checking if the case is male or female
         switch (checkedID){
             case R.id.Male:
