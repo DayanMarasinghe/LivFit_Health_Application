@@ -13,7 +13,6 @@
 
 
 
-
         <activity android:name=".SplashScreen">
 
         </activity>
@@ -41,6 +40,10 @@
         <activity android:name=".StepCounter" />
         <activity android:name=".PushupWorkout" />
         <activity android:name=".CardioWorkout" />
+
+        <activity android:name=".SearchWorkout"/>
+        <activity android:name=".EditFood"/>
+
         <activity android:name=".SearchWorkout">
 
         </activity>
@@ -76,6 +79,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
 
 
