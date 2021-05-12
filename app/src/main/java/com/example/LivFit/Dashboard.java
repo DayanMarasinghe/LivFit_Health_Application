@@ -60,7 +60,7 @@ public class Dashboard extends AppCompatActivity {
         toWater.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent waterIntent = new Intent(Dashboard.this,WaterTracker.class);
+                Intent waterIntent = new Intent(Dashboard.this,WaterIntake.class);
                 startActivity(waterIntent);
             }
         });
@@ -84,7 +84,7 @@ public class Dashboard extends AppCompatActivity {
         toMeals.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mealsIntent = new Intent(Dashboard.this,SearchFood.class);
+                Intent mealsIntent = new Intent(Dashboard.this,MainActivity.class);
                 startActivity(mealsIntent);
             }
         });
