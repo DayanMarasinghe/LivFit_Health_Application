@@ -11,9 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADproject_WorkoutHandling">
 
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/actions" />
+
 
 
 
@@ -36,60 +34,23 @@
         <activity android:name=".aboutUs" />
         <activity android:name=".updateAccount" />
         <activity android:name=".settings" />
-        <activity android:name=".Dashboard" />
+        <activity android:name=".Dashboard" >
+
+        </activity>
         <activity android:name=".DisplayBMI" />
         <activity android:name=".Register_fitness_data"/>
         <activity android:name=".Register" />
         <activity android:name=".login" />
 
         <activity android:name=".SearchFood"/>
-        <activity android:name=".CalorieCounter"/>
         <activity android:name=".StepCounter" />
         <activity android:name=".PushupWorkout" />
         <activity android:name=".CardioWorkout" />
-        <activity android:name=".SearchWorkout"/>
-        <activity android:name=".EditFood"/>
-
-
-
-
-
-
-
-        <activity android:name=".SearchFood"/>
-
-        <activity android:name=".CalorieCounter">
-
-
-
-
-
-
-
-
-
-        </activity>
-        <activity android:name=".StepCounter" />
-        <activity android:name=".PushupWorkout" />
-        <activity android:name=".CardioWorkout" />
-
         <activity android:name=".SearchWorkout">
 
         </activity>
-
-
-
         <activity android:name=".EditFood"/>
 
-
-
-
-
-
-
-      
-
-
-    </application>
+            </application>
 
 </manifest>
