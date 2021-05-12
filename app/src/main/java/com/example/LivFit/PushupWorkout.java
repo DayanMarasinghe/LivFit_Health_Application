@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,12 +33,9 @@ public class PushupWorkout extends AppCompatActivity {
     TextView a,b,burntnum;
     DatabaseReference reff;
     private EditText duration;
-    private Double calburn;
+    private Double calburn, totcal;
     int count;
-    Double totcal;
     String wtype;
-
-    AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,12 +60,9 @@ public class PushupWorkout extends AppCompatActivity {
                 Picasso.get().load(link).into(imageView);
                 a.setText(name);
                 b.setText(calburnt);
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
 
@@ -75,19 +70,16 @@ public class PushupWorkout extends AppCompatActivity {
         burntnum=(TextView)findViewById(R.id.textViewbrntnum);
 
         confirm =(Button) findViewById(R.id.dinbtn);
-
-        awesomeValidation.addValidation(this,R.id.editTextdurationw, RegexTemplate.NOT_EMPTY,R.string.invalid_duration);
-
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(awesomeValidation.validate()) {
+                if(TextUtils.isEmpty(duration.getText())){
+                    duration.setError("Enter Duration");
+                }else {
                     calburn = calculateCalBurnt(duration, b);
                     String getcalburn = String.valueOf(calburn);
                     burntnum.setText(getcalburn);
                     Toast.makeText(PushupWorkout.this, "Calories burnt calculated", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(getApplicationContext(),"Add a valid duration",Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -101,20 +93,14 @@ public class PushupWorkout extends AppCompatActivity {
                     reff.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            String calBurned = snapshot.child("calBurned").getValue().toString();
-                            String btnum = burntnum.toString();
-
-                            totcal = calDisplay(calBurned, btnum);
+                           // String calBurned = snapshot.child("calBurned").getValue().toString();
+                          //  String btnum = burntnum.toString();
+                            // totcal = calDisplay(calBurned, btnum);
                         }
-
-
                         @Override
                         public void onCancelled(@NonNull DatabaseError error) {
-
                         }
-
                     });
-
                     HashMap hashMap = new HashMap();
                     hashMap.put("calBurned", burntcal);
                     reff.updateChildren(hashMap).addOnSuccessListener(new OnSuccessListener() {
@@ -123,11 +109,8 @@ public class PushupWorkout extends AppCompatActivity {
                             Toast.makeText(PushupWorkout.this, "Calories Burnt Updated", Toast.LENGTH_SHORT).show();
                         }
                     });
-
                 }
-
         });
-
     }
 
     public void increment(View v){
