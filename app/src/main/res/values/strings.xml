@@ -77,25 +77,7 @@
     <string name="todo">TODO</string>
 
 
-    <string name="tvMeal1">White Rice(Cups)</string>
-    <string name="etQuantity1" />
-    <string name="etFoodMenu">FOOD MENU</string>
 
-    <string name="tvMeal2">Red Rice(Cups)</string>
-    <string name="tvMeal3">Hoppers</string>
-    <string name="tvMeal4">String Hoppers</string>
-    <string name="tvMeal5">Milk Rice(Cups)</string>
-    <string name="tvMeal6">Cereal (Bowls)</string>
-    <string name="tvMeal7">Cooked Veggies(gr)</string>
-    <string name="tvMeal8">Lentils(gr)</string>
-    <string name="btnMeal1">Add</string>
-    <string name="btnMeal2">Add</string>
-    <string name="btnMeal3">Add</string>
-    <string name="btnMeal4">Add</string>
-    <string name="btnMeal5">Add</string>
-    <string name="btnMeal6">Add</string>
-    <string name="btnMeal7">Add</string>
-    <string name="btnMeal8">Add</string>
 
 
 
@@ -152,6 +134,34 @@
     <string name="darkTheme">Dark Theme</string>
     <string name="invalid_duration">Enter a valid duration</string>
 
+
+    <string name="mainac">CALORIE COUNTER</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="snack">Snacks</string>
+    <string name="neutbutton">Nutrition</string>
+    <string name="waterbutton">Water Intake</string>
+    <string name="updatebreakfast">Update Breakfast Details</string>
+    <string name="updatelunch">Update Lunch Details</string>
+    <string name="updatedinner">Update Dinner Details</string>
+    <string name="updatesnack">Update Snacks Details</string>
+    <string name="updatebutton">Update</string>
+    <string name="tcalories">Total Calories</string>
+    <string name="tprotine">Total Protine</string>
+    <string name="tfat">Total Fat</string>
+    <string name="tcabohydrate">Total Carbohydrates</string>
+    <string name="tcholostrol">Total Cholesterol</string>
+    <string name="tfiber">Total Fiber</string>
+    <string name="Calories">Calories</string>
+    <string name="Protine">Protine</string>
+    <string name="Fat">Fat</string>
+    <string name="Carbohydrates">Carbohy</string>
+    <string name="Cholesterol">Cholest</string>
+    <string name="Fiber">Fiber</string>
+    <string name="water">Water Tracker</string>
+    <string name="wateradd">Submit</string>
+    <string name="dashBoard">Dash Board</string>
 
 
 </resources>
